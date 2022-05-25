@@ -1,4 +1,4 @@
-song = "";
+songs = "";
 statuss = "";
 obj = [];
 
@@ -6,7 +6,7 @@ function preload(){
 }
 
 function setup(){
-    song = loadSound('alert.mp3');
+    songs = loadSound('alert.mp3');
     canvas = createCanvas(854, 480);
     video = createCapture(VIDEO);
     video.hide();
