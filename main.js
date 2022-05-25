@@ -3,10 +3,10 @@ statuss = "";
 obj = [];
 
 function preload(){
-    song = loadSound('alert.mp3');
 }
 
 function setup(){
+    song = loadSound('alert.mp3');
     canvas = createCanvas(854, 480);
     video = createCapture(VIDEO);
     video.hide();
@@ -44,7 +44,7 @@ function draw(){
             rect(obj[i].x + 50, obj[i].y, obj[i].width + 110, obj[i].height);
             if(obj[i].label == "person"){
                 document.getElementById("objectss").innerHTML = "baby detected";
-                //song.stop();
+                song.stop();
             }
             else{
                 document.getElementById("objectss").innerHTML = "baby not detected";
