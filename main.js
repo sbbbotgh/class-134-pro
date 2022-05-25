@@ -3,7 +3,7 @@ statuss = "";
 obj = [];
 
 function preload(){
-    //song = loadSound('https://www.computerhope.com/jargon/m/example.mp3');
+    song = loadSound('alert.mp3');
 }
 
 function setup(){
@@ -48,13 +48,13 @@ function draw(){
             }
             else{
                 document.getElementById("objectss").innerHTML = "baby not detected";
-                //song.play();
+                song.play();
             }
         }
         document.getElementById("status").innerHTML = "Status :  Object Detected";
         if(obj.length < 0){
             document.getElementById("objectss").innerHTML = "baby not detected";
-            //song.play();
+            song.play();
         }
     }
 }
