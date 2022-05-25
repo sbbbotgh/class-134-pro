@@ -1,0 +1,20 @@
+body{
+    background-position: center;
+    background-size:contain;
+}
+
+button{
+    margin: 10px;
+}
+
+.header{
+    margin: 0;
+    width: 100%;
+}
+
+canvas
+{
+    margin-top: -240px;
+    box-shadow: 10px 10px 10px #333;
+    border-radius: 10px;
+}
